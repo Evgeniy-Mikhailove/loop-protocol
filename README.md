@@ -6,6 +6,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Variants](https://img.shields.io/badge/Variants-2_Loops-green.svg)](#two-variants)
+[![GitHub stars](https://img.shields.io/github/stars/Evgeniy-Mikhailove/loop-protocol?style=social)](https://github.com/Evgeniy-Mikhailove/loop-protocol/stargazers)
 
 ---
 
