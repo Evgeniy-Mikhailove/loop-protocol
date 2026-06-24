@@ -1,5 +1,7 @@
 # Loop Protocol
 
+![Loop Protocol](assets/hero.png)
+
 **Self-correcting iteration loops for AI output. Write, score, fix, repeat - until quality converges.**
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
