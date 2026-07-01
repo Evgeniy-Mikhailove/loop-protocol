@@ -54,6 +54,52 @@ Same for both variants:
 
 Whichever triggers first, the loop stops.
 
+## Built-in Rubric: CLEAR
+
+Instead of vibes scoring ("does this feel good?"), the loop uses CLEAR as its built-in rubric template. Five concrete checks that give measurable stop conditions.
+
+| Letter | Criterion | Check |
+|---|---|---|
+| C | Complete | Does the output answer all parts of the task? Nothing missing? |
+| L | Logical | Does it hold together from start to finish? No contradictions? |
+| E | Evidence | Are claims backed by data, examples, or marked as assumptions? |
+| A | Audience | Does it match the real reader's level, language, and expectations? |
+| R | Relevant | Is every part focused on the task? No filler? |
+
+### CLEAR as content-loop stop condition
+
+The loop exits when score >= 95/100 AND all 5 CLEAR criteria pass (no zeros):
+
+```
+CLEAR-60 (run before exiting loop):
+C: all task requirements covered?
+L: logic flows, no gaps or contradictions?
+E: claims backed or marked [verify]?
+A: right register for the target reader?
+R: no filler - every part earns its place?
+
+If any fails -> add to next iteration's fix list.
+```
+
+### CLEAR-aligned rubric template
+
+When generating a rubric for `content-loop`, default to CLEAR weighting:
+
+```
+RUBRIC: CLEAR-aligned
+C - Coverage (task fully addressed)       - /20
+L - Logic flow (coherent, no gaps)        - /20
+E - Evidence (claims supported)           - /20
+A - Audience fit (right level/tone)       - /20
+R - Relevance (no filler)                 - /20
+Total: /100
+```
+
+This makes rubrics consistent across tasks. Adjust weights if the task has asymmetric requirements (e.g., Evidence matters more for technical docs, Audience matters more for marketing copy).
+
+---
+
+
 ---
 
 ## Content Loop - Step by Step
